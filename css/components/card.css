@@ -1,0 +1,64 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Organise le contenu de la carte en colonne */
+  align-items: center;
+  max-width: 300px;
+  margin: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  font-size: 24px;
+  margin: 20px;
+}
+
+.card p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-color);
+  margin: 0 20px 20px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Espace en bas de la carte */
+}
+
+.btn-secondary:hover {
+  background-color: #005b99;
+}

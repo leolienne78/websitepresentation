@@ -1,0 +1,22 @@
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b71c1c; /* Rouge plus foncé au survol */
+  transform: scale(1.05);
+}
+
+.btn-primary:active {
+  transform: scale(0.98); /* Effet de clic */
+}
